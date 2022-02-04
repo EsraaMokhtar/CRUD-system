@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud system</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <section class=" container w-50 shadow-lg my-5 py-5">
+        <h1>CRUD system</h1>
+        <label>productName</label>
+        <input type="text" id="productName" class=" form-control ">
+        <div class="add-alert-name alert alert-danger d-none" role="alert">
+            <strong>the condition are not yet complete....</strong>
+        </div>
+        
+        <label>productCategory</label>
+        <input type="text" id="productCategory" class=" form-control">
+        <div class="add-alert-category alert alert-danger d-none" role="alert">
+            <strong>the condition are not yet complete....</strong>
+        </div>
+
+        <label>productPrice</label>
+        <input type="text" id="productPrice" class=" form-control">
+        <div class="add-alert-price alert alert-danger d-none" role="alert">
+            <strong>please fill the field....</strong>
+        </div>
+        
+        <label>productDescription</label>
+        <textarea id="productDescription"  class=" form-control mb-3"></textarea>
+        <button id="createbtn" class=" btn btn-outline-info">add prpduct</button>
+        <button onclick="clearProduct();" class=" btn btn-outline-info">clear</button>
+        <div class="form-alert alert alert-danger d-none" role="alert">
+            <strong>please check your information....</strong>
+        </div>
+    </section>
+
+    <input type="text" class=" form-control w-25 m-auto my-5" onkeyup="searchProduct();" placeholder="search..." id="searchInput">
+
+    <table class=" table container text-center">
+        <thead>
+            <tr>
+                <th>index :</th>
+                <th>name :</th>
+                <th>catrgory :</th>
+                <th>price :</th>
+                <th>descriprion :</th>
+                <th>update :</th>
+                <th>delete :</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
