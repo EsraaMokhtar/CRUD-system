@@ -1,0 +1,29 @@
+.main-section{
+    width: 50%;
+}
+.search-box{
+    width: 35%;
+}
+@media (max-width:880px)
+{
+	.main-section
+	{
+        width: 75%;
+
+	}
+    .search-box{
+        width:75%;
+    }
+}
+
+@media (max-width:580px)
+{
+	.main-section
+	{
+        width: 90%;
+
+	}
+    .search-box{
+        width: 85%;
+    }
+}
